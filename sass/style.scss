@@ -1,0 +1,27 @@
+@import 'base/variables';
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    
+    margin: 0 auto;
+}
+
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/button';
+@import 'blocks/adv';
+@import 'blocks/title';
+@import 'blocks/workmore';
+@import 'blocks/subtitle';
+@import 'blocks/agent';
+@import 'blocks/price';
+@import 'blocks/consultation';
+@import 'blocks/manager';
+@import 'blocks/work';
+@import 'blocks/carousel';
+@import 'blocks/questions';
+@import 'blocks/footer';
+@import 'blocks/modal';
+@import 'base/media';

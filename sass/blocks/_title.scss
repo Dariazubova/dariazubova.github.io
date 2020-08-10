@@ -1,0 +1,22 @@
+.title {
+    font-size: 22px;
+    line-height: 23px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #2e2e2e;
+    padding-top: 57px;
+    text-align: center;
+    margin-bottom: 35px;
+    &_white {
+        color: #ffffff;
+        text-transform: none;
+        padding-top: 20px;
+    }
+    &_question {
+        font-size: 19px;
+        line-height: 51px;
+        color: #ffffff;
+        padding-top: 0;
+    }
+    
+}

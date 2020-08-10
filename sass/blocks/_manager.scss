@@ -1,0 +1,10 @@
+.manager {
+    min-height: 342px;
+    background: url('../img/bg3.jpg') center (center / cover) no-repeat;
+    padding: 57px 0 58px 0;
+    margin-top: 58px;
+    &__icon {
+        display: block;
+        margin: 0 auto;
+    }
+}

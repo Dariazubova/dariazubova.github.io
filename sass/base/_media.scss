@@ -1,0 +1,419 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 900px;
+    }
+    .promo {
+        nav {
+            .menu {
+                &__item {
+                    padding-left: 0px;
+                }
+                &__link {
+                    font-size: 13px;
+                }
+            }
+        }
+        &__opt {
+            margin-top: 25px;
+        }
+        &__call {
+            font-size: 13px;
+
+        }
+        &__contacts {
+            margin-right: 10px;
+            align-items: flex-end;
+        }
+        &__wrap {
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        
+        &__phone {
+            font-size: 15px;
+        }
+        &__header {
+            font-size: 58px;
+        }
+        &__subheader {
+            font-size: 36px;
+        }
+
+    }
+    .button {
+        &__header {
+            margin-top: 5px;
+        }
+    }
+    .adv {
+        &_blocks {
+            width: 100%;
+        }
+        &_descr {
+            width: 330px;
+
+        }
+    }
+    .workmore {
+        &__item {
+            img {
+                width: 100%;
+            }
+        }
+    } 
+    .price {
+        &__price {
+            font-size: 25px;
+        }
+        &__item {
+           
+            margin-top: 20px;
+        }
+    }
+    .consultation {
+        display: none;
+    }
+    /* .work {
+        
+    } */
+}
+@media (max-width: 991px) {
+    .container {
+        max-width: 630px;
+    }
+    .button {
+        margin-top: 10px;
+        height: 37px;
+        &__promo {
+            width: 215px;
+            height: 45px;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+        &_footer {
+            width: 124px;
+            font-size: 10px;
+        }
+    }
+    .promo {
+        &__logo {
+            display: none;
+        }
+        &__phone {
+            font-size: 12px;
+        }
+        nav {
+            .menu {
+                margin-top: 15px;
+                &__link {
+                    font-size: 13px;
+                }
+            }
+        }
+        &__wrap {
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: flex-start;
+        }
+        &__contacts {
+            margin-top: 0;
+            
+        }
+        &_footer {
+            flex-direction: column;
+        }
+        &__opt {
+            font-size: 22px;
+            margin-top: 15px;
+        }
+        &__header {
+            font-size: 40px;
+        }
+        &__subheader {
+            font-size: 23px;
+        }
+        &__item {
+            width: 100%;
+            margin: 15px auto;
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+        &__subtitle {
+            font-size: 15px;
+        }
+    }
+    .adv {
+        &_blocks {
+            width: 100%;
+        }
+        &_descr {
+            width: 80%;
+
+        }
+    }
+    .title {
+        font-size: 24px;
+    }
+    .subtitle {
+        font-size: 17px;
+    }
+    .workmore {
+        &__item {
+            margin-top: 20px;
+        }
+    }
+    .questions {
+        &__blocks {
+            width: 80%;
+        }
+        &__title {
+            width: 100%;
+        }
+        &__form {
+            min-height: 200px;
+            padding-bottom: 15px;
+            input {
+              width: 74%;  
+              margin: 5px;
+            }
+            textarea {
+                width: 74%;
+            }
+        }
+        .title {
+            &_question {
+                font-size: 18px;
+            }
+        }
+    }
+    .button {
+        &_cons {
+            width: 74%;
+            margin-bottom: 38px;
+        }
+    }
+    
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 550px;
+    }
+    .header {
+        &_wrap {
+            flex-direction: column;
+        }
+    }
+    .promo {
+        &__opt {
+            font-size: 19px;
+        }
+        &__item {
+            width: 50%;
+        }
+        &__header {
+            font-size: 35px;
+        }
+        &__subheader  {
+            font-size: 21px;
+        }
+    }
+    
+}
+@media (max-width: 567px) {
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+    }
+    .slick-dots li {
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+        padding: 0;
+        cursor: pointer;
+    }
+    .slick-dots li button {
+        font-size: 0;
+        line-height: 0;
+        display: block;
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+        cursor: pointer;
+        color: transparent;
+        border: 0;
+        outline: none;
+        background: transparent;
+    }
+    .slick-dots li button:before {
+        content: '•';
+        font-size: 22px;
+        line-height: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        opacity: .25;
+        color: black;
+    } 
+    
+    .hamburger {
+        display: block;
+        position: absolute;
+        left: 50px;
+        top: 7%;
+        transform: translateY(-50%);
+        width: 26px;
+        height: 21px;
+        &_active {
+            left: 34px;
+            transition: 0.5s;
+        }
+        span {
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: #393939;
+            margin-bottom: 5px;
+            transition: 0.5s all;
+        }
+        &_active {
+            span {
+                margin-bottom: -2px;
+                &:nth-child(1) {
+                    transform: translateY(3px) rotate(-45deg);
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    transform: translateY(3px) rotate(45deg);
+                }
+            }
+        }
+    }
+
+    .promo {
+        padding-top: 60px;
+        &__logo {
+            margin-left: 80%;
+        }
+        &__wrap {
+            display: none;
+        }
+        nav {
+            .menu {
+                position: fixed;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                margin: 0;
+                top: 0;
+                right: -100%;
+                width: 77%;
+                height: 100vh;
+                padding: 20px 15px;
+                background-color: rgba(0,0,0,.8);
+                transition: 0.6s;
+                &_active {
+                    right: 0;
+                }
+                &__item {
+                    border-right: none;
+                    margin-top: 10px;
+                    margin-left: 0;
+                }
+            }
+        }
+        &__opt {
+            font-size: 14px;
+        }
+        &__header {
+            font-size: 25px;
+        }
+        &__subheader {
+            font-size: 16px;
+        }
+    }
+    .title {
+        font-size: 21px;
+
+    }
+    .modal {
+        width: 67%;
+        &__close {
+            top: 4px;
+            right: 5px;
+        }
+    }
+    .button {
+        &_submit {
+            width: 67%;
+            margin: 0;
+        }
+    }
+    .feed-form {
+        input {
+            width: 75%;
+        }
+    }
+    
+    .footer {
+        &__descr {
+            margin-top: 10px;
+            width: 55%;
+        }
+        &__text {
+            font-size: 14px;
+        }
+    }
+}
+@media (max-width: 420px) {
+    .promo {
+        &__opt {
+            font-size: 13px;
+        }
+        &__header {
+            font-size: 24px;
+        }
+        &__subheader {
+            font-size: 15px;
+        }
+    }
+    .modal {
+        width: 90%;
+    }
+    .footer {
+        &__logo {
+            flex-direction: column;
+            img {
+                display: none;
+            }
+        }
+        &__descr {
+            width: 100%;
+        }
+        &_footer {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}
+@media (max-width: 320px) {
+    .modal {
+        input {
+            width: 73%;
+        }
+    }
+    .button {
+        &_submit {
+            width: 73%;
+            
+        }
+    }
+}

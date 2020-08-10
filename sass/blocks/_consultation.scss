@@ -1,0 +1,50 @@
+.consultation {
+    &__block {
+        margin-top: 71px;
+        min-height: 166px;
+        border: 1px #898989 solid;
+        border-top: 0;
+        position: relative;
+        &:before, &:after {
+            display: block;
+            position: absolute;
+            content: '';
+            width: 44%;
+            height: 1px;
+            background: #898989;
+            top: 0;
+        }
+        &:before {
+            left: 0;
+        }
+        &:after {
+            right: 0;
+        }
+    }
+    &-logo {
+        display: block;
+        margin: 0 auto;
+        transform: translateY(-50px);
+    }
+    &__form {
+        display: flex;
+        justify-content: center;
+        margin-top: -25px;
+        input {
+            width: 270px;
+            height: 45px;
+            border: 1.0px solid rgba(0,0,0,0.21);
+            border-radius: 30px;
+            margin-right: 5px;
+            padding: 0 20px;
+            font-size: 13px;
+            line-height: 24px;
+            font-weight: 300;
+            color: #101010;
+        }
+        
+    }
+    
+    
+
+}
