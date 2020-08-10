@@ -1,0 +1,79 @@
+.header {
+    position: absolute;
+    min-height: 100px;
+    width: 100%;
+    padding: 30px 0 30px;
+    &__logo {
+        width: 100px;
+        height: 100px;
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    }
+    nav {
+        position: relative;
+        z-index: 1;
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            margin-top: 35px;
+            &__item {
+                border-right: 1px rgba($color: #ebe5e5, $alpha: 0.4) dotted;
+                padding: 0 10px 0 10px;
+                &:last-child {
+                    border-right: none;
+                }
+            }
+            &__link {
+                font-size: 15px;
+                line-height: 16px;
+                font-weight: 400;
+                color: #ffffff;
+                &:hover {
+                    cursor: pointer;
+                    color: $main-color;
+                }
+            }
+        }
+    }    
+    &__wrapper {
+        display: flex;
+    }
+    &__contacts {
+        margin-top: 17px;
+        display: flex;
+        flex-direction: column;
+        margin-right: 18px;
+    }
+    &_footer {
+        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+        
+    
+    &_call {
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 300;
+        color: #ffffff;
+        text-align: right;
+    }
+    &__phone {
+        font-size: 17px;
+        line-height: 24px;
+        font-weight: 700;
+        color: #ffffff;
+        &:hover {
+            cursor: pointer;
+            color: $main-color;
+        }
+    }
+    /* .hamburger {
+        display: none;
+    } */
+    
+}

@@ -1,0 +1,49 @@
+.button {
+    width: 160px;
+    height: 45px;
+    background-color: $main-color;
+    border: none;
+    border-radius: 30px;
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    &_mini {
+        display: block;
+        margin: 25px auto;
+    }
+    &__header {
+        margin-top: 20px;
+    }
+    &__promo {
+        width: 230px;
+        height: 57px;
+        font-size: 15px;
+        line-height: 17px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ffffff;
+        display: block;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    &_cons {
+        width: 180px;
+        display: block;
+        margin: 0 auto;
+        
+        transform: translateY(22px);
+
+    }
+    &_footer {
+        margin-top: 0;
+    }
+    &_submit {
+        width: 210px;
+        height: 53px;
+        margin: 0 auto;
+    }
+    
+}
