@@ -1,0 +1,33 @@
+.var {
+    min-height: 400px;
+    padding: 80px 0;
+    &_bg {
+        position: relative;
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+    &__clouds, &__server {
+        position: absolute;
+        top: 40%;
+        width: 89%;
+    }
+    &__server {
+        padding-left: 53px;
+    }
+    &_descr {
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 300;
+        color: #ffffff;
+        text-align: right;
+        
+    }
+    &_descr-right {
+        text-align: left;
+    }
+}
+.col-lg-6 {
+    padding: 0;
+}

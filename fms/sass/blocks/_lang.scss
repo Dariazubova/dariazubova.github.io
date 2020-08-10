@@ -1,0 +1,45 @@
+.lang {
+    min-height: 85px;
+    padding: 20px;
+    background-color: red($color: #000000);
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__icon {
+        width: 20%;
+        display: flex;
+        margin-right: 18px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__flag {
+        margin-right: 11px;
+    }
+    &_country {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 700;
+        color: #242424;
+    }
+    &__contact {
+        font-size: 12px;
+        font-weight: 300;
+        a {
+            text-decoration: none;
+            color: #242424;
+        }
+        
+
+    }
+    &__tel {
+        font-size: 12px;
+        font-weight: 300;
+        a {
+            text-decoration: none;
+            color: #242424;
+        }
+    }
+
+}
