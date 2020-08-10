@@ -1,0 +1,75 @@
+.expert {
+    min-height: 700px;
+    background: url(../img/bg2.jpg) center center / cover no-repeat;
+    padding: 79px 0 60px;
+    &_div {
+        width: 843px;
+        height: 64px;
+        border: 1.0px solid #ffffff;
+        border-radius: 5px;
+        margin: 25px auto;
+    }
+    &__tabs {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        padding: 10px 32px;
+    }
+    &__tab {
+        display: flex;
+        font-size: 14px;
+        line-height: 41px;
+        font-weight: 400;
+        color: #ffffff;
+        border-right: 1px solid #fff;
+        padding-right: 20px;
+        &:last-child {
+            border-right: none;
+        }
+        cursor: pointer;
+        &:hover {
+            font-weight: 700;
+            color: #00c2f0;
+        }
+    }
+    &_slider {
+        background: url(../icon/slider/macbook.png) center center / cover no-repeat;
+        display:block;
+        margin: 0 auto;
+        position: absolute;
+        z-index: 1;
+        width: 83%;
+        height: 560px;
+        position: relative;
+    }
+    &_slide {
+        position: relative;
+        padding-top: 37px;
+        left: 16%;
+        img {
+            position: relative;
+            width: 76%;
+            height: 435px;
+            
+        }
+    }
+    .slick-prev, .slick-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -66px;
+        border: none;
+        background: none;
+        img{
+            width: 18px;
+            height: 59px;
+        }
+    }
+    .slick-next {
+        right: -66px;
+        left: auto;
+    }
+     
+    
+}
+

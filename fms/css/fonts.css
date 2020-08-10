@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url('../fonts/Roboto.eot');
+    src: url('../fonts/Roboto.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto.woff') format('woff'),
+    url('../fonts/Roboto.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    }
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url('../fonts/Roboto.eot');
+    src: url('../fonts/Roboto.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto.woff') format('woff'),
+    url('../fonts/Roboto.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+        
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url('../fonts/Roboto.eot');
+    src: url('../fonts/Roboto.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto.woff') format('woff'),
+    url('../fonts/Roboto.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url('../fonts/Roboto.eot');
+    src: url('../fonts/Roboto.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto.woff') format('woff'),
+    url('../fonts/Roboto.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
