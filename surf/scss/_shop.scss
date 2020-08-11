@@ -1,0 +1,167 @@
+.shop {
+    background-image: url(../images/shop-bg.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    &__slider {
+        &-inner {
+            display: flex;
+            padding: 0 30px;
+        }
+        &-info {
+            max-width: 480px;
+            margin-right: 40px;
+            width: 100%;
+            padding-top: 160px;
+        }
+        &-content {
+            padding-left: 170px;
+            display: flex;
+            align-items: flex-end;
+
+        }
+        &-price {
+            font-weight: 800;
+            font-size: 32px;
+            line-height: 40px;
+            margin-bottom: 67px;
+            sup {
+                font-size: 18px;
+                padding-left: 2px;
+            }
+        }
+    }
+    &__star {
+        &-list {
+            margin-left: -9px;
+        }
+    }
+    
+    &__extras {
+        padding-left: 150px;
+        &-title {
+            margin-bottom: 25px;
+            font-weight: 800;
+            font-size: 28px;
+            line-height: 40px;
+        }
+        &-inner {
+            display: flex;
+        }
+        &-box {
+            text-align: center;
+            margin-right: 57px;
+        }
+        &-img {
+            min-height: 105px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 35px;
+        }
+        &-name {
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 8px;
+            opacity: 0.5;
+            margin-bottom: 16px;
+        }
+        &-price {
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 40px;
+        }
+    }
+    .slider-arrows {
+        top: -40px;
+    }
+    
+}
+.descr__head-shop {
+    max-width: 340px;
+    margin-bottom: 47px;
+}
+.surfboard {
+    position: relative;
+    &-box {
+        position: absolute;
+        
+        &__circle {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #fff;
+            cursor: pointer;
+            &.active {
+
+                .circle-row {
+                    transform: translate(-50%, -50%) rotate(0deg);
+
+                }
+            }
+        }
+        &__content {
+            display: none;
+            position: absolute;
+            width: 359px;
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 24px;
+            padding-left: 104px;
+            top: -15px;
+            left: 40px;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 80px;
+                height: 1px;
+                background-color: #fff;
+                left: 0;
+                top: 50%;
+            }
+        }
+    }
+    &__position--1 {
+        right: 40px;
+        top: 215px;
+    }
+    &__position--2 {
+        left: -6px;
+        top: 313px;
+    }
+    &__position--3 {
+        left: 52px;
+        bottom: 70px;
+        .surfboard-box__content {
+            padding-left: 0;
+            padding-right: 104px;
+            top: -15px;
+            left: -400px;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 80px;
+                height: 1px;
+                background-color: #fff;
+                right: 0;
+                left: auto;
+                top: 50%;
+            }
+        }
+    }
+}
+.circle-row {
+    background-color: $green;
+    position: absolute;
+    width: 12px;
+    height: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    & + .circle-row {
+        transform: translate(-50%, -50%) rotate(90deg);
+    }
+
+}
+.surfboard-box__circle.active + .surfboard-box__content {
+    display: block;
+}
