@@ -1,0 +1,37 @@
+.promo {
+    min-height: 100vh;
+    background: url('../image/bgc.jpg') center center / cover;
+    padding: 30px 0 50px 0;
+    &_contacts {
+        display: flex;
+        justify-content: space-between;
+        font-size: 13px;
+        line-height: 19px;
+        font-weight: 500;
+    }
+    &_menu {
+        margin-top: 31px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 400;
+        padding: 0px;
+        li {
+            padding: 13px 103px;
+            border: 1px solid #fff;
+            border-left: none;
+            &:last-child {
+                border-right: none;
+            }
+            
+        }
+    }
+    &_buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 420px;
+        
+        
+    }
+}

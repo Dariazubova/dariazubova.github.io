@@ -1,0 +1,22 @@
+.descr {
+    padding: 100px 0 100px 0;
+    background-color: $bg;
+    min-height: 100vh;
+    &_wrap {
+        border: 3px solid #C4C4C4;
+        padding: 60px 0 60px 0;
+    }
+    &_text {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        width: 85%;
+    }
+    &_img {
+        display: block;
+        margin: 50px auto;
+        
+    }
+}

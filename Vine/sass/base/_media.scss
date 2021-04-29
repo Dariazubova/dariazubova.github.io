@@ -1,0 +1,284 @@
+@media (max-width: 1200px) {
+    .container {
+        width: 900px;
+    }
+    .promo {
+        &_menu {
+            li {
+                padding: 13px 75px;
+            }
+        }
+    }
+    .title {
+        font-size: 31px;
+    }
+    .novelty {
+        &_wrap {
+            grid-template-columns: 50% 50%;
+            column-gap: 55px;
+        }
+        &__table {
+            &-year:before {
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: 135px;
+                background-color: #282828;
+                top: -53%;
+                right: 29%;
+            }
+        }
+    }
+    .footer {
+        &__name, &__phone, &__cocial, &__logo {
+            padding: 20px 25px;
+        }
+        
+    }
+    
+}
+@media (max-width: 991px) {
+    .container {
+        width: 750px;
+    }
+    .promo {
+        &_menu {
+            li {
+                padding: 13px 55px;
+            }
+        }
+    }
+    .btn {
+        font-size: 12px;
+        width: 185px;
+        &-novelty {
+            width: 205px;
+        }
+        &-contacts {
+            width: 100%;
+        }
+    }
+    .novelty {
+        &_wrap {
+            grid-template-columns: 100%;
+        }
+        &__descr  {
+            &_text {
+                margin-top: 30px;
+            }
+        }
+        &__table {
+            &-year {
+                &:before {
+                    width: 1px;
+                    height: 89px;
+                    top: -53%;
+                }
+            }
+        }
+    }
+    .carousel {
+        margin: 50px auto;
+        width: 100%;
+        height: 100%;
+    }
+    .title {
+        &-contacts {
+            left: 21%;
+            &::after, &::before {
+                content: none;
+            }
+        }
+    }
+    .footer {
+        &__links {
+            padding: 20px 15px;
+        }
+        &__cocial {
+            &-icon {
+                margin-right: 10px;
+            }
+        }
+    }
+    
+}
+@media (max-width: 767px) {
+    .container {
+        width: 550px;
+    }
+    .promo {
+        &_menu {
+            flex-direction: column;
+            align-items: center;
+            li {
+               border: none;
+
+            }
+        }
+        &_buttons {
+            margin-top: 240px;
+        }
+    }
+    .btn {
+        padding: 15px 13px;;
+    }
+    .title {
+        &-contacts {
+            padding: 0 20px;
+            left: 15%;
+        }
+    }
+    .contacts {
+        &__form {
+            width: 100%;
+        }
+        &__triggers {
+            width: 86%;
+        }
+        &__name, &__phone {
+            width: 45%;
+        }
+        &__textarea {
+            width: 86%;
+        }
+        &__policy {
+            &-checkbox {
+                width: 15px;
+            }
+        }
+    }
+    .footer {
+        &__inner{
+            display: flex;
+            justify-content: space-between;
+        }
+        &__links, &__info {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            border: unset;
+        }
+        &__name, &__phone, &__cocial, &__logo {
+            padding: 5px 0;
+            border: unset;
+        }
+    }
+    
+}
+@media (max-width: 567px) {
+    .container {
+        width: 400px;
+    }
+    .title {
+        font-size: 24px;
+        &-contacts {
+            padding: 0px 10px;
+            left: 13%;
+            top: -5%;
+        }
+    }
+    .descr {
+        &_wrap {
+            padding: 30px 20px 30px 20px;
+        }
+    }
+    .novelty {
+        &__table {
+            &:after {
+                width: 390px;
+            }
+            &-year {
+                &:before {
+                    height: 115px;
+                }
+                &:first-child:after {
+                    width: 390px;
+                }
+            }
+        }
+    }
+    .contacts {
+        &__inner {
+            border: none;
+            padding: 30px 0 40px 0;
+        }
+        
+        &__triggers, textarea {
+            width: 100%;
+        }
+        
+    }
+    .footer {
+        &__info {
+            align-items: flex-end;
+        }
+    }
+}
+@media (max-width: 420px) {
+    .container {
+        width: 310px;
+    }
+    .title {
+        &-contacts {
+            position: unset;
+        }
+    }
+    .btn {
+        margin-right: 10px;
+    }
+    .promo {
+        &_contacts {
+            flex-direction: column;
+            align-items: flex-end;
+            font-size: 10px;
+        }
+    }
+    .novelty {
+        &__table {
+            &:after {
+                content: none;
+            }
+            &-year {
+                &:before {
+                    content: none;                
+                }
+                &:first-child:after {
+                    content: none;                
+                }
+            }
+            &-title {
+                margin-bottom: 8px;
+                font-size: 13px;
+                line-height: 20px;
+            }
+        }
+    }
+    .contacts {
+        padding: 80px 0 80px 0;
+        &__wrap {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        &__name, &__phone {
+            width: 100%;
+            &:first-child {
+                margin-right: 0;
+                margin-bottom: 40px;
+            }
+        }
+         
+    }
+    .footer {
+        &__inner {
+            justify-content: center;
+        }
+        &__links {
+            display: none;
+        }
+        &__info {
+            align-items: center;
+        }
+    }
+   
+}

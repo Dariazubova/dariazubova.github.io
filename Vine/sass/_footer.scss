@@ -1,0 +1,42 @@
+.footer {
+    min-height: 220px;
+    padding: 50px 0 50px 0;
+    background-color: $btn;
+    &__inner {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    &__links {
+        padding: 20px 50px 20px 50px;
+    }
+    &__links, &__info {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid #fff;
+        border-right: none;
+        border-left: none;
+    }
+    &__info {
+        justify-content: center;
+        align-items: center;
+        border-top: none;
+    }
+    &__name, &__phone, &__cocial, &__logo {
+        padding: 20px 60px;
+        border-right: 1px solid #fff;
+        text-transform: uppercase;
+        position: relative;
+    }
+    &__cocial {
+        &-icon {
+            margin-right: 35px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    &__logo {
+        border-right: none;
+    }
+   
+}

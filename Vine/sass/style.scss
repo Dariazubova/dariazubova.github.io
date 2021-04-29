@@ -1,0 +1,106 @@
+@import './base/variables';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    color: #fff;
+
+}
+.title {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+    &-black {
+        color:  #282828;
+        text-align: left;
+    }
+    &-contacts {
+        position: absolute;
+        background: $bg;
+        top: -6%;
+        left: 27%;
+        padding: 0 50px;
+        &::before {
+            content: '';
+            background-image: url(../image/grapes.png);
+            height: 248px;
+            width: 260px;
+            position: absolute;
+            left: -67%;
+            top: -128%;
+        }
+        &::after {
+            content: '';
+            background-image: url(../image/barrel.png);
+            height: 200px;
+            width: 260px;
+            position: absolute;
+            top: -101%;
+            right: -66%;
+        }
+    }
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.divider {
+    margin: 40px auto;
+    width: 160px;
+    height: 1px;
+    border: 1px solid #FFFFFF;
+    &-novelty {
+        width: 100%;
+        height: 1px;
+        border: 1px solid #998431;
+        &-mini {
+            margin: 30px 0 30px 0;
+            border: 1px solid #282828;
+        }
+    }
+}
+.btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    width: 203px;
+    height: 50px;
+    background: $btn;
+    &-novelty {
+        display: block;
+        margin-top: 45px;
+        width: 254px;
+    }
+    &-contacts {
+        margin-right: 0;
+        width: 541px;
+        height: 50px;
+        border: 1px solid #FFFFFF;
+        background: $bg;
+    }
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+
+@import './promo';
+@import './descr';
+@import './novelty';
+@import './form';
+@import './footer';
+@import './slider';
+@import './base/media';
