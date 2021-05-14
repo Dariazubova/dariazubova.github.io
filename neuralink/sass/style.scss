@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+.container {
+    width: 1320px;
+    margin: 0 auto;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+li {
+    list-style-type: none;
+}
+.neuralink-links {
+    font-size: 13px;
+    line-height: 20px;
+}
+.divider {
+    margin-top: 135px;
+    width: 427px;
+    height: 2px;
+    background-color: #fff;
+    &-cards {
+        width: 100%;
+        margin: 34px auto 0;
+    }
+    &-create {
+        margin-top: 35px;
+    }
+}
+.title {
+    font-size: 41px;
+    line-height: 48px;
+}
+.links-arrow {
+    margin-top: 21px;
+    font-size: 19px;
+    line-height: 24px;
+    a{
+        &:first-child {
+            margin-right: 21px;
+        }
+        &::after {
+            content: url('../images/arrow-right.png');
+            margin-left: 7px;
+        }
+    }
+    &-create {
+        position: absolute;
+        bottom: 10%;
+
+    }
+}
+@import 'blocks/promo';
+@import 'blocks/cards';
+@import 'blocks/create';
+@import 'blocks/footer';
+@import 'media';

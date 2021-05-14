@@ -1,0 +1,54 @@
+.footer {
+    padding: 50px 0;
+    color: #858585;
+    a {
+        color: #858585;
+
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+    &__logo {
+        display: flex;
+        &-img {
+            padding-top: 10px;
+        }
+    }
+    &__info {
+        font-size: 14px;
+        line-height: 20px;
+        text-transform: uppercase;
+        margin-left: 60px
+    }
+    &__contacts {
+        width: 426px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &-address {
+            display: flex;
+            flex-direction: column;
+        }
+        
+    }
+    &__form {
+        position: relative;
+        &::after {
+                content: url('../images/arrow-right-gray.png');
+                position: absolute;
+                right: 1px;
+            }
+        input {
+            padding: 5px;
+            width: 100%;
+            font-size: 14px;
+            line-height: 16px;
+            color: #BBBFBF;
+            border: none;
+            border-bottom: 1px solid #858585;
+            
+        }
+        
+    }
+}
