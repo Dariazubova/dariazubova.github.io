@@ -1,0 +1,44 @@
+.btn {
+    font-weight: 600;
+    color: $main-color;
+    text-align: center;
+    border: none;
+    &:hover {
+        cursor: pointer;
+    }
+    &__cards {
+        width: 120px;
+        height: 40px;
+        background: #FFB6B5;
+        box-shadow: 0px 10px 25px rgba(255, 182, 181, 0.5);
+        border-radius: 10px;
+        font-size: 12px;
+        line-height: 15px;
+        &:hover {
+            background: lighten(#FFB6B5, 1)
+        }
+        &-more {
+            display: block;
+            margin: 45px auto;
+            width: 160px;
+            height: 50px;
+            background: #86E2F1;
+            box-shadow: 0px 10px 25px rgba(134, 226, 241, 0.5);
+            border-radius: 15px;
+            font-size: 14px;
+            line-height: 18px;
+            &:hover {
+                background: lighten(#86E2F1, 3)
+            }
+        }
+        &-mail {
+            display: none;
+            width: 40px;
+            height: 40px;
+            background: #FFB6B5;
+            box-shadow: 0px 10px 25px rgba(255, 182, 181, 0.5);
+            border-radius: 10px;
+        }
+    }
+    }
+    

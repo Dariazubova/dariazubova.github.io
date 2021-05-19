@@ -1,0 +1,33 @@
+.origami {
+    width: 773px;
+    margin: 210px auto 0;
+    color: $main-color;
+    text-align: center;
+    &__title {
+        font-weight: 700;
+        font-size: 54px;
+        line-height: 54px;
+    }
+    &__descr {
+        width: 603px;
+        margin: 35px auto 0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #858198;
+        &::before {
+            content: '';
+            background: url('../images/shape-wheel-blue.png');
+            background-size: contain;
+            position: absolute;
+            width: 252px;
+            height: 405px;
+            left: 0;
+            top: 20%;
+        }
+        &-paragraph {
+            margin-top: 25px;
+        }
+    }
+    
+}
