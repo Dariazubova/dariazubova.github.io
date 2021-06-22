@@ -1,0 +1,22 @@
+@import 'base/normalize';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    width: 1120px;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    color: #212121;
+}
+
+@import 'blocks/reduslim';
+@import 'base/media';

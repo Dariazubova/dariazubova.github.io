@@ -1,0 +1,166 @@
+@media (max-width: 1300px) {
+    .container {
+        width: 100%;
+    }
+    .reduslim {
+        &__img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .form {
+        &__title {
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 1091px) {
+    .reduslim {
+        &__eco {
+            margin-top: -16px;
+        }
+    }
+    .form {
+        &__main {
+            margin: 35px auto 0;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .reduslim {
+        &__wrapper {
+            flex-direction: column;
+            box-shadow: none;
+            width: 60%;
+            margin: 0 auto;
+        }
+        &__picture, .form {
+            width: auto;
+        }
+    }
+    .form {
+        padding-bottom: 15px;
+    }
+    .trusted {
+        display: block;
+        margin: 40px auto 0;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 130%;
+        text-align: center;
+        &-img {
+            padding: 0 20px;
+        }
+    }
+}
+@media (max-width: 840px) {
+    .reduslim {
+        &__wrapper {
+            width: 85%;
+        }
+    }
+}
+@media (max-width: 645px) {
+    .reduslim {
+        &__wrapper {
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 585px) {
+    .reduslim {
+        padding: 30px 45px 0;
+        background: #fff;
+        &__picture {
+            padding: 0;
+            background: url("../images/circle.png") center center / 80% no-repeat;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        &__title, &__eco {
+            color: #212121;
+        }
+        &__eco {
+            margin-top: 0;
+        }
+        &__img {
+            order: 3;
+            margin-top: 0;
+            width: 100%;
+            height: 41%;
+        }
+    }
+    .form {
+        &__title {
+            background: #fff;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .reduslim {
+        &__picture {
+            height: 315px;
+        }
+        &__img {
+            height: 60%;
+        }
+        
+    }
+}
+@media (max-width: 420px) {
+    .reduslim {
+        padding: 40px 20px 0;
+        &__picture {
+            background-size: 202px;
+        }
+        &__title {
+            width: 50%;
+        }
+        &__img {
+            flex: auto;
+            height: 164px;
+        }
+        
+    }
+    .form {
+        &__title {
+            font-size: 26px;
+        }
+        &__main {
+            width: 100%;
+        }
+        &__name, &__btn {
+            width: 100%;
+        }
+        &__phone {
+            width: 100%;
+        }
+        &__lang {
+            margin-left: 10px;
+            padding-left: 5px;
+            width: 30%;
+        }
+    }
+
+}
+@media (max-width: 320px) {
+    .reduslim {
+        &__img {
+            width: 225px;
+            height: 125px;
+        }
+    }
+    .form {
+        &__name, &__btn {
+            width: 280px;
+        }
+        &__phone {
+            width: 175px;
+        }
+        &__lang {
+            width: 96px;
+        }
+    }
+   
+}
