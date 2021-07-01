@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета Зубова Дарья</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#questionnaire">Личная информация</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#experience">Опыт</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#js">JavaScript</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#about">О себе</a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </nav>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="divider"></div>
+    </header>
+    
+
+    <div class="questionnaire" id="questionnaire">
+        <div class="container">
+            <h1 class="questionnaire__title">Анкета</h1>
+            <img src="img/personal.png" alt="" class="icon questionnaire__icon">
+            <h2 class="subtitle">Личная информация</h2>
+            <form class="questionnaire__form" action="#">
+                <input class="questionnaire__input" type="text" placeholder="Зубова Дарья Сергеевна">
+                <select class="questionnaire__select" id="birthYear">
+                    <option class="questionnaire__select" value="0">1993</option>
+                </select>
+                <input class="questionnaire__input" type="text" placeholder="Пермь">
+                <input class="questionnaire__input" type="text" placeholder="Skype">
+                <input class="questionnaire__input" type="text" placeholder="dariazubova_github@mail.ru">
+            </form>
+        </div>
+    </div>
+
+    <div class="experience" id="experience">
+        <div class="container">
+            <img src="img/exp.png" alt="" class="icon experience__icon">
+            <h2 class="subtitle">Расскажите о своем опыте</h2>
+            <div class="experience__wrap">
+                <label class="label">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>БЭМ/OOCSS
+                </label> 
+                <label class="label">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>Stylus/LESS/SASS
+                </label> 
+                <label class="label">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>Работаю с SVG
+                </label> 
+                <label class="label">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>Верстаю семантично
+                </label> 
+                <label class="label">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>ES2015/ES2016
+                </label> 
+                <label class="label">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>Gulp/GRUNT
+                </label> 
+                <label class="label">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>Webpack
+                    </label> 
+                <label class="label">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>jQuery
+                </label> 
+                <label class="label">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>Ипользую Git
+                </label> 
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="js" id="js">
+        <div class="container">
+            <img src="img/js.png" alt="" class="icon js__icon">
+            <h2 class="subtitle">Уровень владения JavaScript</h2>
+            <div class="slider__inner">
+                <div class="slider__value">
+                    <div class="slider__value-item">Не владею<span id="red_value"></span></div>
+                    <div class="slider__value-item">Использую готовые
+                    <br>решения</div>
+                    <div class="slider__value-item">Использую готовые решения
+                    <br>и умею и переделывать</div>
+                    <div class="slider__value-item">Пишу сложный JS с нуля</div>
+                </div>
+                <div class="block">
+                    <input type="range" class="range" min='0' value='2' max='3'>
+                    <div class="scale">
+                        <div class="scale_bg"></div>
+                        <div class="scale_fill"></div>
+                        <div class="scale_overlap"></div>
+                    </div>
+              </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <div class="container">
+            <img src="img/about.png" alt="" class="icon">
+            <h2 class="subtitle">Расскажите о себе</h2>
+            <div class="about__text">Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас.</div>
+            <form action="#">
+                <textarea placeholder="Понравилась тем, что..."> Я верстальщик. Владею html5, css3, бэм-неймингом, базовым JS, jQuery, gulp, git, figma. Так же использую scss/sass. Делаю адаптацию страниц, даже если нет мобильного макета. На данный момент изучаю wordPress.
+                Данная вакансия привлекла тем, что работа удаленная и проектная, есть возможность самостоятельно выбрать свои рабочие часы. Так же понравилось, что вы готовы оказать помощь при возникновении трудностей.
+                Пример моего кода можете посмотреть по ссылке:
+                https://github.com/Dariazubova/dariazubova.github.io
+                </textarea>
+            </form>
+            <button type="submit" class="about__btn">Готово</button>
+        </div>
+    </div>
+
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <!--Plugin JavaScript file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
