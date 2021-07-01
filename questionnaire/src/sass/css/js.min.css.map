@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,GAAG,AAAC,CACD,UAAU,CAAE,KAAK,CAKnB,AAHI,AAAD,SAAO,AAAC,CACJ,UAAU,CAAE,KAAK,CACpB",
-    "sources": [
-        "../blocks/js.scss"
-    ],
-    "names": [],
-    "file": "js.min.css"
-}
