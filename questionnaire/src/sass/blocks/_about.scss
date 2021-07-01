@@ -1,0 +1,40 @@
+.about {
+    margin-bottom: 94px;
+    &__text {
+        width: 66%;
+        margin: 23px auto 0;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.5;
+    }
+    textarea {
+        display: block;
+        resize: none;
+        margin: 39px auto 0;
+        width: 521px;
+        height: 181px;
+        padding: 25px 21px;
+        border-radius: 5px;
+        border: solid 1px #e5e5e5;
+        font-size: 20px;
+        &::placeholder {
+            color: rgba(200, 200, 200, .8);
+        }
+    }
+    &__btn {
+        display: block;
+        width: 116px;
+        height: 51px;
+        margin: 69px auto 0;
+        background-color: #435993;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: 300;
+        text-align: center;
+        color: #ffffff;
+        cursor: pointer;
+    }
+    
+}

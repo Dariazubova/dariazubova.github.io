@@ -1,0 +1,184 @@
+@media (max-width: 921px) {
+    .container {
+        width: 80%;
+    }
+    .experience {
+        &__wrap {
+            column-gap: 15px;
+        }
+    }
+    .js  {
+        .slider__value-item:first-child {
+            margin-right: 0;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .divider {
+        margin-top: 55px;
+    }
+    .menu {
+        z-index: 5;
+        position: fixed;
+		top: 0;
+		left: -100%;
+		width: 50%;
+		height: 100vh;
+		padding: 20px 15px;
+		background-color: rgba(0, 0, 0, .9);
+		transition: 0.6s all;
+        &__list {
+            height: 50%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+		&_active {
+            left: 0;
+        }
+		&__item {
+            font-size: 20px;
+            margin: 25px 20px;
+            a{
+                color: #fff;
+            }
+        }
+    }
+	.hamburger {
+        display: block;
+        top: 22px;
+		position: absolute;
+        z-index: 7;
+		right: 45%;
+		transform: translateY(-50%);
+		width: 45px;
+		height: 36px;
+        cursor: pointer;
+		span {
+            margin-top: 10px;
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: $main-color;
+            margin-bottom: 2px;
+            transition: 0.5s all;
+        }
+		&_active {
+            position: fixed;
+            top: 30px;
+            right: 35%;
+            span {
+                margin-bottom: -2px;
+				&:nth-child(1) {
+                    transform: translateY(5px) rotate(45deg);
+                }
+				&:nth-child(2) {
+                    display: none;
+                }
+				&:nth-child(3) {
+                    transform: translateY(-3px) rotate(-45deg);
+                }
+            }
+				
+        }
+			
+    }
+    .questionnaire {
+        margin-top: 70px;
+        &__input, &__select {
+            width: 90%;
+        }
+    }
+    .experience {
+        &__wrap {
+            grid-template-columns: repeat(2, 50%);
+        }
+        
+    }
+    .js {
+        .slider {
+            &__value-item {
+                font-size: 11px;
+            }
+            &__inner {
+                min-height: 185px;
+                flex-direction: row;
+                justify-content: center;
+            }
+            &__value {
+                flex-direction: column;
+            }
+        }
+        .block {
+            width: 40%;
+            margin-top: 50px;
+            transform: rotate(90deg);
+        }
+    } 
+    .about {
+        &__text {
+            width: 100%;
+        }
+        textarea {
+            width: 90%;
+        }
+    }
+		
+}
+@media (max-width: 490px) {
+    .container {
+        width: 90%;
+    }
+    .menu_active {
+        width: 95%;
+    }
+    .hamburger_active {
+        right: 10%;
+        span {
+            background-color: #fff;
+        }
+    }
+    .questionnaire {
+        &__title {
+            font-size: 55px;
+        }
+        &__input, &__select {
+            width: 90%;
+            font-size: 19px;
+        }
+    }
+    .subtitle {
+        font-size: 27px;
+    }
+    .experience {
+        &__wrap {
+            grid-template-columns: 1fr;
+            width: 50%;
+        }
+    }
+    .about {
+        &__text {
+            font-size: 13px;
+            width: 90%;
+        }
+        textarea {
+            width: 80%;
+            font-size: 19px;
+        }
+    }
+    .js {
+        .block {
+            width: 50%;
+        }
+    }
+    
+}
+@media (max-width: 420px) {
+    .js {
+        .block {
+            width: 90%;
+            height: 15px
+        }
+
+    }
+}
