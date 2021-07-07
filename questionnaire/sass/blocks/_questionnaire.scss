@@ -1,0 +1,123 @@
+.questionnaire {
+    margin-top: 130px;
+    text-align: center;
+    &__title {
+        font-size: 70px;
+        line-height: 50px;
+        font-weight: 100;
+    }
+    &__form {
+        margin-top: 48px;
+        &-block {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            &:nth-child(n+2) {
+                margin-top: 21px;
+            }
+            input:focus ~ label  {
+                display: flex;
+            }
+        }
+    }
+    &__label {
+        display: none;
+        align-items: center;
+        position: absolute;
+        top: 8px;
+        z-index: 3;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 400;
+        color: #adadad;
+    }
+    &__input, .select__header {
+        width: 520px;
+        height: 60px;
+        border-radius: 5px;
+        border: 1px solid #e5e5e5;
+        text-align: center;
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 400;
+        &:focus {
+            border: 1px solid #435993;
+            outline: none;
+        }
+        &::placeholder {
+            font-size: 24px;
+            line-height: 1.2;
+            font-weight: 400;       
+            color: rgba(200, 200, 200, .8);
+        }
+        &:focus::placeholder {
+            color: transparent;
+        }
+    } 
+    .select {
+        margin: 25px auto 0;
+        position: relative;
+        &__header {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 320px;
+            color: rgba(200, 200, 200, .8);
+            cursor: pointer;
+            background-color: rgba(217,217,217,0.0);
+            &::before {
+                content: url('../img/down.png');
+                position: absolute;
+                top: 17px;
+                padding-right: 20px;
+                right: 0;
+            }
+        }
+        &__header-up {
+            &::before {
+                content: url(../img/down.png);
+                bottom: 15px;
+                transform: rotateX(180deg);
+            }
+        } 
+        &__current {
+            font-size: 24px;
+            line-height: 1.2;
+            font-weight: 400;       
+            color: rgba(200, 200, 200, .8);
+            
+        }
+        &__body {
+            width: 320px;
+            margin: 0 auto;
+            background-color: #fff;
+            overflow: overlay;
+            box-shadow: 5px 5px 8px -8px rgba(0, 0, 0, 0.2);
+            border-top: 0;
+            display: none;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 100%;
+            z-index: 3;
+        }
+        &__item {
+            cursor: pointer;
+            font-size: 20px;
+            line-height: 36px;
+            font-weight: 300;
+            color: #435993;
+        }
+        &__item:hover {
+            background-color: #f2f2f2;
+        }
+    }
+    .select.is-active .select__body {
+        display: block;
+        height: 300px;
+        padding: 35px 0 33px 0;
+    }
+}
+
+

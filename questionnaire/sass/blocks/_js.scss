@@ -1,0 +1,171 @@
+.js {
+    &__icon {
+        margin-top: 127px;
+    }
+    .slider {
+        &__inner {
+            margin-top: 44px;
+            display: flex;
+            flex-direction: column;
+        }
+        &__value {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            &-item {
+                position: relative;
+                font-size: 13px;
+                line-height: 16px;
+                font-weight: 300;
+                color: #2e211c;
+                &:first-child {
+                    margin-right: 55px;
+                }
+                &::before {
+                  content: '';
+                  position: absolute;
+                  height: 19px;
+                  border-left: 1px dotted #c5c5c5;
+                  bottom: -25px;
+                  z-index: 9;
+                }
+                &::after {
+                  content: '';
+                  position: absolute;
+                  height: 9px;
+                  border-left: 1px solid #fff;
+                  z-index: 11;
+                  bottom: -30px;
+                  left: 0;
+                }
+				&-1::before {
+					height: 21px;
+					bottom: -26px;
+				}        
+				&-2::after {
+					height: 21px;
+					left: 4px;
+				}
+				&-2::before {
+					left: 4px;
+				}
+				&-3 {
+					margin-left: 17px;
+					&::after {
+						height: 15px;
+						left: 4px;
+					}
+					&::before {
+						height: 11px;
+						bottom: -15px;
+						left: 4px;
+					}
+				}
+				&-4 {
+					&::before {
+						right: 0px;
+						height: 8px;
+						bottom: -12px;
+					}
+					&:after {
+						display: none;
+					}
+				}
+            }
+        }
+    }
+    &__block {
+        height: 15px;
+        width: 100%;
+        position: relative;
+        padding: 0 0 45px 0;
+		&-scale {
+			width: 100%;
+			height: 15px;
+			position: absolute;
+			left: 0px;
+			bottom: 30px;
+			overflow: hidden;
+			&-bg {
+				width: 100%;
+				height: 15px;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				background: #e8e8e8;
+			}
+			&-fill {
+				width: 0;
+				height: 15px;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				background: #cbb1f1;
+				background: -moz-linear-gradient(left, #cbb1f1 0%, #445a94 100%);
+				background: -webkit-linear-gradient(left, #cbb1f1 0%, #445a94 100%);
+				background: linear-gradient(to right bottom, #fff 41%, transparent 45%),linear-gradient(to right, #cbb1f1, $second-color);
+				transition: width 0.4s;
+				border-right: 1px solid #fff;
+			}
+			&-overlap {
+				width: 100%;
+				height: 14px;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				background: rgba(255, 255, 255, 0.3);
+			}
+		}
+    }
+	&__range {
+        -webkit-appearance: none;
+        padding-top: 50px;
+        width: 100%;
+        height: 45px;
+        background: transparent;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        z-index: 1;
+		&::-webkit-slider-thumb {
+			-webkit-appearance: none;
+		}
+		&:focus {
+			outline: none;
+		}
+		&::-ms-track {
+			width: 100%;
+			cursor: pointer;
+			background: transparent;
+			border-color: transparent;
+			color: transparent;
+		}
+		&::-webkit-slider-thumb {
+			-webkit-appearance: none;
+			position: relative;
+			height: 26px;
+			width: 23px;
+			background-image: url(../img/js-marker.png);;
+			background-repeat: no-repeat;
+			cursor: pointer;
+			margin-top: 16px;
+			right: 3px;
+		}
+		&::-webkit-slider-runnable-track {
+			width: 100%;
+			cursor: pointer;
+			background: none;
+		}
+		&::-moz-range-track {
+			width: 100%;
+			cursor: pointer;
+			background: none;
+		}
+		::-ms-track {
+			width: 100%;
+			cursor: pointer;
+			background: none;
+		}
+    }
+    
+}
