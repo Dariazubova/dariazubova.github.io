@@ -1,0 +1,121 @@
+.add {
+    display: none;
+    padding-bottom: 67px;
+    &__wrap {
+        margin-top: 10px;
+        width: 370px;
+        height: 294px;
+        border: 1.5px solid #DDDFED;
+        border-radius: 15px 15px 25px 25px;
+        
+    }
+    &__radio {
+        display: flex;
+        align-items: center;
+        padding: 11px 0 11px 15px;
+        width: 370px;
+        height: 58px;
+        border-bottom: 1.5px solid #E1E3EE;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+        input {
+            margin-right: 17px;
+        }
+        input[type="radio"]:checked, 
+        input[type="radio"]:not(:checked) {
+            position: absolute;
+            left: -9999px;
+        }
+        input[type="radio"]:checked + label, 
+        input[type="radio"]:not(:checked) + label {
+            display: inline-block;
+            position: relative;
+            padding-left: 35px;
+            line-height: 20px;
+            cursor: pointer;
+            
+        }
+        input[type="radio"]:checked + label > span {
+            color: $btn-color;
+        }
+        input[type="radio"]:checked + label:before, 
+        input[type="radio"]:not(:checked) + label:before {
+            content: "";
+            position: absolute;
+            left: 0px;
+            top: 13px;
+            width: 19px;
+            height: 19px;
+            border: 1.5px solid #E1E3EE;
+            background-color: #ffffff;
+        }
+        input[type="radio"]:checked + label:before, 
+        input[type="radio"]:not(:checked) + label:before {
+            border-radius: 100%;
+        }
+        input[type="radio"]:checked + label:after, 
+        input[type="radio"]:not(:checked) + label:after {
+            content: "";
+            position: absolute;
+            -webkit-transition: all 0.2s ease;
+            -moz-transition: all 0.2s ease;
+            -o-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+        }
+        input[type="radio"]:checked + label:after, 
+        input[type="radio"]:not(:checked) + label:after {
+            left: 5px;
+            top: 18px;
+            width: 12px;
+            height: 12px;
+            border-radius: 100%;
+            background-color: $btn-color; 
+        }
+        input[type="radio"]:not(:checked) + label:after {
+            opacity: 0; 
+        }
+        input[type="radio"]:checked + label:after {
+            opacity: 1;
+        }
+        label {
+            cursor: pointer;
+            span {
+                display: block;
+                margin-top: 5px;
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 15px;
+                color: #A7A2CB;;
+            }
+        }
+        &:hover {
+            width: 100%;
+            background:#F4F5FA;
+            &:first-child {
+                //width: 367px;
+                border-radius: 15px 15px 0px 0px;
+            }
+            &:last-child {
+               /*  width: 367px;
+                height: 51px; */
+                border-radius: 0px 0px 25px 25px;
+            }
+            
+        }
+        &:last-child {
+            border: none;
+            input[type="radio"]:checked + label:after, 
+            input[type="radio"]:not(:checked) + label:after {
+                left: 5px;
+                top: 5px;
+            }
+            input[type="radio"]:checked + label:before, 
+            input[type="radio"]:not(:checked) + label:before {
+                top: 0;
+            }
+        }
+        
+    }
+}

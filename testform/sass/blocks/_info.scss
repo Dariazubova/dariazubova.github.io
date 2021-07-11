@@ -1,0 +1,63 @@
+.info {
+    padding: 35px;
+    &__input {
+        width: 370px;
+        margin-top: 8px;
+        padding-bottom: 7px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        border: none;
+        outline: none;
+        border-bottom: 1.5px solid rgba(225, 227, 238, .5);
+        
+    }
+    &__prod {
+        margin-top: 22px;
+    }
+    &__link, &__offer {
+        font-weight: 500;
+    }
+    &__link {
+        margin-top: 17px;
+    }
+    &__offer {
+        margin-top: 12px;
+    }
+    &__add {
+        position: relative;
+        margin-top: 26px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: $btn-color;
+        cursor: pointer;
+        &::after {
+            content: '';
+            background-image: url('../img/add.svg');
+            position: absolute;
+            width: 13px;
+            height: 15px;
+            margin-left: 6px;
+            top: 2px;
+            cursor: pointer;
+        }
+    }
+    .secure {
+        margin-top: 9px;
+        padding-left: 13px;
+        position: relative;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #AFB4CC;
+        text-align: center;
+        &:before {
+            content: url('../img/secure.png');
+            position: absolute;
+            width: 13px;
+            height: 11px;
+            left: 89px;
+        }
+    }
+}

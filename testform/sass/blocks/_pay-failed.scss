@@ -1,0 +1,13 @@
+.pay-failed {
+    display: none;
+    &__img {
+        align-self: center;
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 310px;
+            height: 246px;
+        } 
+    }
+    
+}

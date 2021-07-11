@@ -1,0 +1,65 @@
+.products {
+    display: none;
+    margin-bottom: 67px;
+    padding-right: 15px;
+    &__scroll {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: 360px;
+       
+        &::-webkit-scrollbar {
+            width: 4px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: $btn-color;
+            border-radius: 5px;
+        }
+        &::-webkit-scrollbar-track {
+            background: #E1E3EE;
+            border-radius: 5px;
+        }
+    }
+    &__wrap {
+        margin-bottom: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        position: relative;
+        &::after {
+            content: '';
+            background-image: url('../img/add.svg');
+            position: absolute;
+            transform: rotate(45deg);
+            width: 13px;
+            height: 14px;
+            margin-left: 6px;
+            top: 4px;
+            cursor: pointer;
+        }
+    }
+    
+}
+.loader {
+    display: none;
+    position: absolute;
+    bottom: 45px;
+    left: 49%;
+    transform: translate(-50%);
+    animation: preloader-rotate 3s linear infinite;
+    img {
+        width: 32px;
+        height: 32px;
+    }
+}
+  @keyframes preloader-rotate {
+    0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+  }
+  
+  
+  

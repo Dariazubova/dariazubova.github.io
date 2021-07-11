@@ -1,0 +1,13 @@
+.successfull {
+    display: none;
+    &__img {
+        margin: 41px 0 85px;
+        align-self: center;
+        img { 
+            display: block;
+            margin: 0 auto;
+            width: 157px;
+            height: 122px;
+        }
+    }
+}
